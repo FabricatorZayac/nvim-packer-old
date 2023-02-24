@@ -49,6 +49,13 @@ return require('packer').startup(function(use)
     }
   }
 
+  use {
+    "aserowy/tmux.nvim",
+    config = function() return require("tmux").setup() end
+  }
+
+  -- use 'vimpostor/vim-tpipeline'
+
   use 'nvim-tree/nvim-web-devicons'
 
   use 'kdheepak/lazygit.nvim'
