@@ -51,6 +51,8 @@ return require('packer').startup(function(use)
 
   use 'nvim-tree/nvim-web-devicons'
 
+  use 'kdheepak/lazygit.nvim'
+
   use 'tpope/vim-commentary'
   use 'tpope/vim-surround'
   use 'tpope/vim-repeat'
