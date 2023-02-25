@@ -27,3 +27,5 @@ vim.opt.isfname:append("@-@")
 vim.opt.colorcolumn = "80"
 
 vim.g.mapleader = " "
+
+vim.opt.cmdheight = 0

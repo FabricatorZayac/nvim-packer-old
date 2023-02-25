@@ -54,6 +54,8 @@ return require('packer').startup(function(use)
     config = function() return require("tmux").setup() end
   }
 
+  use 'kevinhwang91/rnvimr'
+
   -- use 'vimpostor/vim-tpipeline'
 
   use 'nvim-tree/nvim-web-devicons'
