@@ -20,13 +20,12 @@ return require('packer').startup(function(use)
     'nvim-treesitter/nvim-treesitter',
     {run = ':TSUpdate'}
   }
+use 'mbbill/undotree'
 
-  use 'mbbill/undotree'
-
-  use {
-    'windwp/nvim-autopairs',
-    config = function() require("nvim-autopairs").setup {} end
-  }
+  -- use {
+  --   'windwp/nvim-autopairs',
+  --   config = function() require("nvim-autopairs").setup {} end
+  -- }
 
   use {
     'VonHeikemen/lsp-zero.nvim',
@@ -54,7 +53,9 @@ return require('packer').startup(function(use)
     config = function() return require("tmux").setup() end
   }
 
-  use 'kevinhwang91/rnvimr'
+  use "jose-elias-alvarez/null-ls.nvim"
+
+  -- use 'kevinhwang91/rnvimr'
 
   -- use 'vimpostor/vim-tpipeline'
 
@@ -66,4 +67,6 @@ return require('packer').startup(function(use)
   use 'tpope/vim-surround'
   use 'tpope/vim-repeat'
   use 'tpope/vim-fugitive'
+
+  use 'vmchale/ats-vim'
 end)
