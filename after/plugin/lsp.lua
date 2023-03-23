@@ -1,9 +1,9 @@
 local lsp = require('lsp-zero').preset("recommended")
 
-lsp.ensure_installed({
-  'lua_ls',
-  'rust_analyzer',
-})
+-- lsp.ensure_installed({
+--   'lua_ls',
+--   'rust_analyzer',
+-- })
 
 -- (Optional) Configure lua language server for neovim
 lsp.nvim_workspace()
