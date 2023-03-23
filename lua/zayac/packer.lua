@@ -31,6 +31,7 @@ use 'mbbill/undotree'
   --   'windwp/nvim-autopairs',
   --   config = function() require("nvim-autopairs").setup {} end
   -- }
+  use "cohama/lexima.vim"
 
   use {
     'VonHeikemen/lsp-zero.nvim',
