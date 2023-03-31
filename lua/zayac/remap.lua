@@ -15,5 +15,5 @@ vim.keymap.set("x", "<leader>p", "\"_dp")
 vim.keymap.set("t", "<Esc>", "<C-\\><C-n>")
 
 -- yank into clipboard, don't seem to work via ssh
--- vim.keymap.set("n", "<leader>y", "\"+y")
--- vim.keymap.set("v", "<leader>y", "\"+y")
+vim.keymap.set("n", "<leader>y", "\"+y")
+vim.keymap.set("v", "<leader>y", "\"+y")
