@@ -14,6 +14,8 @@ return require('packer').startup(function(use)
     requires = { "nvim-telescope/telescope.nvim", "nvim-lua/plenary.nvim" }
   }
 
+  use "nvim-telescope/telescope-project.nvim"
+
   use "ellisonleao/gruvbox.nvim"
 
   use {
