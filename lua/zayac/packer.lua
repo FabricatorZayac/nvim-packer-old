@@ -21,11 +21,10 @@ return require('packer').startup(function(use)
     requires = { 'kyazdani42/nvim-web-devicons', opt = true }
   }
 
-  use {
-    'nvim-treesitter/nvim-treesitter',
-    {run = ':TSUpdate'}
-  }
-use 'mbbill/undotree'
+  use 'nvim-treesitter/nvim-treesitter'
+  use 'nvim-treesitter/nvim-treesitter-context'
+
+  use 'mbbill/undotree'
 
   -- use {
   --   'windwp/nvim-autopairs',
