@@ -57,7 +57,12 @@ return require('packer').startup(function(use)
 
   use {
     "aserowy/tmux.nvim",
-    config = function() return require("tmux").setup() end
+    config = function () return require("tmux").setup() end
+  }
+
+  use {
+    "jbyuki/instant.nvim",
+    config = function () vim.g.instant_username = "FabricatorZayac" end
   }
 
   use "jose-elias-alvarez/null-ls.nvim"
