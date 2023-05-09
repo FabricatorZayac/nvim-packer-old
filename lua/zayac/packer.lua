@@ -1,6 +1,6 @@
 vim.cmd [[packadd packer.nvim]]
 
-return require('packer').startup(function(use)
+return require('packer').startup(function (use)
   use 'wbthomason/packer.nvim'
 
   use {
@@ -8,12 +8,10 @@ return require('packer').startup(function(use)
     tag = '0.1.1',
     requires = {'nvim-lua/plenary.nvim'}
   }
-
   use {
     "nvim-telescope/telescope-file-browser.nvim",
     requires = { "nvim-telescope/telescope.nvim", "nvim-lua/plenary.nvim" }
   }
-
   use "nvim-telescope/telescope-project.nvim"
 
   use "ellisonleao/gruvbox.nvim"
@@ -28,10 +26,6 @@ return require('packer').startup(function(use)
 
   use 'mbbill/undotree'
 
-  -- use {
-  --   'windwp/nvim-autopairs',
-  --   config = function() require("nvim-autopairs").setup {} end
-  -- }
   use "cohama/lexima.vim"
 
   use {
@@ -56,6 +50,30 @@ return require('packer').startup(function(use)
   }
 
   use {
+    "folke/trouble.nvim",
+    config = function ()
+      require("trouble").setup {
+        -- icons = false,
+        -- your configuration comes here
+        -- or leave it empty to use the default settings
+        -- refer to the configuration section below
+      }
+    end
+  }
+
+  use {
+    "folke/todo-comments.nvim",
+    requires = "nvim-lua/plenary.nvim",
+    config = function()
+      require("todo-comments").setup {
+        -- your configuration comes here
+        -- or leave it empty to use the default settings
+        -- refer to the configuration section below
+      }
+    end
+  }
+
+  use {
     "aserowy/tmux.nvim",
     config = function () return require("tmux").setup() end
   }
@@ -65,13 +83,18 @@ return require('packer').startup(function(use)
     config = function () vim.g.instant_username = "FabricatorZayac" end
   }
 
+  -- use {
+  --   "startup-nvim/startup.nvim",
+  --   requires = {"nvim-telescope/telescope.nvim", "nvim-lua/plenary.nvim"},
+  --   config = function ()
+  --     require"startup".setup()
+  --   end
+  -- }
+
   use "jose-elias-alvarez/null-ls.nvim"
 
-  -- use 'kevinhwang91/rnvimr'
-
-  -- use 'vimpostor/vim-tpipeline'
-
   use 'nvim-tree/nvim-web-devicons'
+  use 'norcalli/nvim-colorizer.lua'
 
   use 'kdheepak/lazygit.nvim'
 
@@ -79,6 +102,7 @@ return require('packer').startup(function(use)
   use 'tpope/vim-surround'
   use 'tpope/vim-repeat'
   use 'tpope/vim-fugitive'
+  use 'tpope/vim-obsession'
 
   use 'vmchale/ats-vim'
 end)
