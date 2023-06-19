@@ -22,6 +22,7 @@ return require('packer').startup(function (use)
   }
 
   use 'nvim-treesitter/nvim-treesitter'
+  use 'nvim-treesitter/playground'
   use 'nvim-treesitter/nvim-treesitter-context'
 
   use 'mbbill/undotree'
