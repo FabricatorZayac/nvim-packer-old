@@ -14,6 +14,7 @@ return require('packer').startup(function (use)
     requires = { "nvim-telescope/telescope.nvim", "nvim-lua/plenary.nvim" }
   }
   use "nvim-telescope/telescope-project.nvim"
+  use "nvim-telescope/telescope-dap.nvim"
 
   -- colorscheme
   use "ellisonleao/gruvbox.nvim"
@@ -89,6 +90,13 @@ return require('packer').startup(function (use)
     config = function () vim.g.instant_username = "FabricatorZayac" end
   }
 
+  use {
+    'numToStr/Comment.nvim',
+    config = function()
+        require('Comment').setup()
+    end
+  }
+
   -- bullshit language stuff
   use "nvim-orgmode/orgmode"
   use "vmchale/ats-vim"
@@ -99,9 +107,12 @@ return require('packer').startup(function (use)
   use "norcalli/nvim-colorizer.lua"
 
   -- mandatory tpope stuff
-  use "tpope/vim-commentary"
   use "tpope/vim-surround"
   use "tpope/vim-repeat"
   use "tpope/vim-fugitive"
   use "tpope/vim-obsession"
+
+  -- debugging
+  use "mfussenegger/nvim-dap"
+  use "rcarriga/nvim-dap-ui"
 end)
