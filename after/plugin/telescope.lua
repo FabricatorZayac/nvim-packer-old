@@ -21,11 +21,13 @@ require("telescope").setup {
       },
     },
   },
+  defaults = require("telescope.themes").get_ivy(),
 }
 
 require("telescope").load_extension "file_browser"
 
 vim.keymap.set("n", "<leader>ff", function () vim.cmd("Telescope file_browser") end , {})
+vim.keymap.set("n", "<leader>FF", function () vim.cmd("Telescope file_browser hidden=true") end , {})
 
 require'telescope'.load_extension("project")
 -- vim.keymap.set("n", "<C-p>", ":lua require'telescope'.extensions.project.project{}<CR>", {noremap = true, silent = true})
