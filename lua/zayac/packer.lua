@@ -115,4 +115,7 @@ return require('packer').startup(function (use)
   -- debugging
   use "mfussenegger/nvim-dap"
   use "rcarriga/nvim-dap-ui"
+
+  -- general bullshit
+  use "andweeb/presence.nvim"
 end)
