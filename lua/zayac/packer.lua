@@ -55,6 +55,7 @@ return require('packer').startup(function (use)
       {"rafamadriz/friendly-snippets"}, -- Optional
     }
   }
+  -- use 'mfussenegger/nvim-jdtls'
 
   use {
     "folke/trouble.nvim",
@@ -102,10 +103,6 @@ return require('packer').startup(function (use)
   use "vmchale/ats-vim"
   use "jose-elias-alvarez/null-ls.nvim"
 
-  -- I don't even remember what this was for
-  use "nvim-tree/nvim-web-devicons"
-  use "norcalli/nvim-colorizer.lua"
-
   -- mandatory tpope stuff
   use "tpope/vim-surround"
   use "tpope/vim-repeat"
@@ -118,4 +115,10 @@ return require('packer').startup(function (use)
 
   -- general bullshit
   use "andweeb/presence.nvim"
+  use "nvim-tree/nvim-web-devicons"
+  use "norcalli/nvim-colorizer.lua"
+  use "AndrewRadev/linediff.vim"
+
+  -- compilation mode
+  use "shoumodip/compile.nvim"
 end)
