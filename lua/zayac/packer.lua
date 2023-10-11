@@ -102,6 +102,7 @@ return require('packer').startup(function (use)
   use "nvim-orgmode/orgmode"
   use "vmchale/ats-vim"
   use "jose-elias-alvarez/null-ls.nvim"
+  use "tjdevries/templ.nvim"
 
   -- mandatory tpope stuff
   use "tpope/vim-surround"
